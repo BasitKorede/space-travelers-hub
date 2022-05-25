@@ -3,13 +3,13 @@ import axios from 'axios';
 const GET_ROCKETS = 'GET_ROCKETS';
 
 const getRocketsFromApi = (success) => {
-    axios.get('https://api.spacexdata.com/v3/rockets')
-      .then((res) => {
-        success(res);
-      });
-  };
+  axios.get('https://api.spacexdata.com/v3/rockets')
+    .then((res) => {
+      success(res);
+    });
+};
 
-  const initialState = [];
+const initialState = [];
 
 export const rocketsReducer = (state = initialState, action) => {
   let rockets;
