@@ -11,12 +11,12 @@ const Header = () => {
     <nav>
       <ul>
         <li>
-          <NavLink  className={({ isActive }) => (isActive ? 'active' : '')} to="/">
+          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">
             Rockets
           </NavLink>
         </li>
         <li>
-          <NavLink  className={({ isActive }) => (isActive ? 'active' : '')} to="/missions">
+          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/missions">
             Missions
           </NavLink>
         </li>
