@@ -11,7 +11,6 @@ const Rocket = (props) => {
         <button type="button">Reserve Rocket</button>
       </div>
     </div>
-
   );
 };
 
