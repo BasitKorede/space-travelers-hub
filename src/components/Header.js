@@ -11,17 +11,17 @@ const Header = () => {
     <nav>
       <ul>
         <li>
-          <NavLink to="/">
+          <NavLink  className={({ isActive }) => (isActive ? 'active' : '')} to="/">
             Rockets
           </NavLink>
         </li>
         <li>
-          <NavLink to="/missions">
+          <NavLink  className={({ isActive }) => (isActive ? 'active' : '')} to="/missions">
             Missions
           </NavLink>
         </li>
         <li>
-          <NavLink to="/myprofile">
+          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/myprofile">
             My Profile
           </NavLink>
         </li>
