@@ -7,7 +7,8 @@ const Rockets = () => {
   const dispatch = useDispatch;
 
   useEffect(() => {
-    dispatch();
+
+    dispatch(getRockets());
   }, [dispatch]);
 
   return (
