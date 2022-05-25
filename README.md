@@ -1,21 +1,19 @@
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # space-travelers-hub
 
-> A basic react bookstore apps that test and build a bookstore app using react redux
+> A group react Space travelers app that test and build a Space travel app using react redux
 
 ## Built With
 
 - HTML
 - JavaScript
 - React js
+- Redux
+- Linters
 - Frameworks
 - Technologies used
-
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
 
 ## Getting Started
 
@@ -35,7 +33,7 @@ To get a local copy up and running follow these simple example steps.
 - Clone the project
 
 ```bash
-git clone https://github.com/basitkorede/html-template.git
+git clone https://github.com/BasitKorede/space-travelers-hub.git
 
 ```
 
@@ -62,10 +60,11 @@ You can also check against Webhint:
 ```bash
 npx hint --telemetry=off .
 ```
+
 - Clone the project
 
 ```bash
-git clone https://github.com/rotimiazeez/my-leaderboard.git
+git clone https://github.com/BasitKorede/space-travelers-hub.git
 
 ```
 
@@ -97,6 +96,12 @@ Your app is ready to be deployed!
 - GitHub: [@githubhandle](https://github.com/BasitKorede)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/basit-korede/)
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/L2oukmane)
+- Twitter: [@twitterhandle](https://twitter.com/LoukmaneOustani)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/loukmaneoustani/)
 
 ## 🤝 Contributing
 
