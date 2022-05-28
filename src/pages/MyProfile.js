@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import ProfileMissions from '../components/ProfileMissions';
 import styles from './MyProfile.module.css';
 
+
 const MyProfile = () => {
   const missions = useSelector((state) => state.missions);
   const profileMission = missions.filter((mission) => mission.reserved === true);
