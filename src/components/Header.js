@@ -1,34 +1,46 @@
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import logo from '../assets/logo.png';
+import styles from './Header.module.css';
+import logoImg from '../assets/planet.png';
 
-const Header = () => {
+const Header = () => (
   <header>
-    <NavLink to="/">
-      <img src={logo} alt="logo" />
-      <h1>Space Travelers Hub</h1>
+    <NavLink
+      to="/"
+      className={styles.logoContainer}
+    >
+      <img src={logoImg} alt="logo" className={styles.logo} />
+      <h1 className={styles.title}>Space Travelers Hub</h1>
     </NavLink>
-    <nav>
+    <nav className={styles.navBar}>
       <ul>
         <li>
-          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/">
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            to="/"
+          >
             Rockets
           </NavLink>
         </li>
         <li>
-          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/missions">
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            to="/missions"
+          >
             Missions
           </NavLink>
         </li>
         <li>
-          <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to="/myprofile">
+          <NavLink
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            to="/myprofile"
+          >
             My Profile
           </NavLink>
         </li>
       </ul>
     </nav>
-
-  </header>;
-};
+  </header>
+);
 
 export default Header;
