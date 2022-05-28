@@ -18,7 +18,7 @@ const Mission = (props) => {
       dispatch(joinMission(id));
     }
   };
-  
+
   return (
     <li className={styles.missionRow}>
       <h3>{name}</h3>
