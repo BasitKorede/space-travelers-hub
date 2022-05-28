@@ -4,9 +4,6 @@ const GET_MISSIONS = 'space-travelers-hub/missions/GET_MISSIONS';
 const JOIN_MISSION = 'space-travelers-hub/missions/JOIN_MISSION';
 const LEAVE_MISSION = 'space-travelers-hub/missions/LEAVE_MISSION';
 
-const JOIN_MISSION = 'space-travelers-hub/missions/JOIN_MISSION';
-const LEAVE_MISSION = 'space-travelers-hub/missions/LEAVE_MISSION';
-
 const URL = 'https://api.spacexdata.com/v3/missions';
 
 export const getMissions = (success) => {
@@ -15,8 +12,9 @@ export const getMissions = (success) => {
       success(response);
     });
 };
+const initialState = [];
 
-export const missionsReducer = (state = [], action) => {
+export const missionsReducer = (state = initialState, action) => {
   let missions;
   switch (action.type) {
     case GET_MISSIONS:

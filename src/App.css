@@ -40,6 +40,7 @@ button {
 }
 
 .rocket-image {
+  min-width: 200px;
   width: 200px;
   height: 150px;
 }
@@ -82,6 +83,13 @@ button {
   border: 1px solid #535252;
 }
 
+.my-profile {
+  gap: 20px;
+  width: 50%;
+  font-size: 24px;
+  color: #535252;
+}
+
 li {
   border: 1px solid #ccc;
 }
@@ -103,4 +111,3 @@ li {
   height: 2rem;
   background-color: transparent;
 }
-
