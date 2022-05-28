@@ -13,5 +13,4 @@ const ProfileMissions = (props) => {
 ProfileMissions.propTypes = {
   name: PropTypes.string.isRequired,
 };
-
 export default ProfileMissions;

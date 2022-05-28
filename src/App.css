@@ -1,7 +1,9 @@
-.body {
+* {
+  box-sizing: border-box;
+  color: rgb(38, 38, 53);
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 ul,
@@ -12,6 +14,10 @@ h4,
 p {
   padding: 0;
   margin: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .d-flex {
@@ -26,7 +32,7 @@ p {
 .rockets {
   padding: 2% 5%;
   gap: 20px;
-  color: rgb(83, 82, 82);
+  color: #535252;
 }
 
 .rocket {
@@ -42,12 +48,59 @@ p {
   gap: 10px;
 }
 
-.rocket-details button {
+.reserve-rocket,
+.cancel-reservation {
+  gap: 10px;
+}
+
+.cancel-reservation span {
+  background: #3fb9cc;
+  color: #fff;
+  padding: 2px;
+  font-size: 12px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+.reserve-rocket button,
+.cancel-reservation button {
   width: fit-content;
   padding: 8px;
-  background: #137fe4;
   border: none;
   border-radius: 3px;
-  color: #fff;
   cursor: pointer;
 }
+
+.reserve-rocket button {
+  color: #fff;
+  background: #137fe4;
+}
+
+.cancel-reservation button {
+  color: #535252;
+  background: #fff;
+  border: 1px solid #535252;
+}
+
+li {
+  border: 1px solid #ccc;
+}
+
+.active {
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 3px;
+  border: 1px solid #ccc;
+  padding: 2rem;
+}
+
+.profile-mission button {
+  width: 40%;
+  height: 2rem;
+  background-color: transparent;
+}
+
