@@ -5,7 +5,6 @@ import styles from './styles/Profile.module.css';
 
 const Profile = () => {
   const missions = useSelector((state) => state.missionsReducer);
-  // console.log(missions);
   const dispatch = useDispatch();
 
   useEffect(() => {
