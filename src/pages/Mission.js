@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { useDispatch } from 'react-redux';
 import styles from './Mission.module.css';
 import { joinMission, leaveMission } from '../redux/missions';
@@ -17,6 +18,7 @@ const Mission = (props) => {
       dispatch(joinMission(id));
     }
   };
+  
   return (
     <li className={styles.missionRow}>
       <h3>{name}</h3>
@@ -32,12 +34,14 @@ const Mission = (props) => {
           <button type="submit" onClick={handleMissionClick}>Join Mission</button>
         </div>
       )}
+
     </li>
   );
 };
 
 Mission.propTypes = {
   mission: PropTypes.shape({
+
     id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
