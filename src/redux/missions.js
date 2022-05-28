@@ -1,6 +1,8 @@
 import axios from 'axios';
 
 const GET_MISSIONS = 'space-travelers-hub/missions/GET_MISSIONS';
+const JOIN_MISSION = 'space-travelers-hub/missions/JOIN_MISSION';
+const LEAVE_MISSION = 'space-travelers-hub/missions/LEAVE_MISSION';
 
 const JOIN_MISSION = 'space-travelers-hub/missions/JOIN_MISSION';
 const LEAVE_MISSION = 'space-travelers-hub/missions/LEAVE_MISSION';
